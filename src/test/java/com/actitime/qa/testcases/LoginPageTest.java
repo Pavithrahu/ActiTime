@@ -41,6 +41,11 @@ public class LoginPageTest extends TestBase{
 		loginpage.loginToApplication(prop.getProperty("Adminusername"), prop.getProperty("Adminpassword"));
 	}
 	
+	@Test
+	public void verifyForgotPwdLink() {
+		loginpage.validateForgotPasswordLink();
+	}
+	
 	
 	@AfterMethod
 	public void tearDown() {
